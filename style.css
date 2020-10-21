@@ -19,7 +19,11 @@ font-family: sans-serif;
   opacity: 0;
   transition: 0.5s;
 }
-//distanze valori tab
+/* distanza valori tab */
 th{
     padding: 10px 20px;
+}
+
+thead{
+  background-color: red;
 }
