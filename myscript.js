@@ -11,7 +11,7 @@ crea.addEventListener("click", function () {
   var km = document.getElementById('km').value;
   var fasciaeta = document.getElementById('eta').value;
   var mincarrozza = 1;
-  var maxcarrozza = 10;
+  var maxcarrozza = 20;
   var minnumcp = 90000;
   var maxnumcp =100000;
 
