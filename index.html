@@ -8,50 +8,51 @@
   <body>
     <!-- nav per richiesta dati utente -->
     <div class="nav_top">
-            <div class="form">
-                <div>
-                    <label for="nome">Nome cliente</label>
-                    <input id="nome" type="text" name="nome" value="" placeholder="Inserire nome">
-                </div>
-                <div>
-                    <label for="km">numero Km che si vogliono percorrere</label>
-                    <input id="km" type="number" name="km" value="" placeholder="Inserire numero km che si vogliono percorrere">
-                </div>
-                <div>
-                    <label for="Categoria">Categoria</label>
-                    <select id="categoria" name="categoria">
-                        <option value="Over 65">Over 65</option>
-                        <option value="" selected>Maggiorenne</option>
-                        <option value="Minorenne">Minorenne</option>
+        <div class="form">
+            <div>
+                <label for="nome">Nome cliente</label>
+                <input id="nome" type="text" name="nome" value="" placeholder="Inserire nome">
+            </div>
+            <div>
+                <label for="km">numero Km che si vogliono percorrere</label>
+                <input id="km" type="number" name="km" value="" placeholder="Inserire numero km che si vogliono percorrere">
+            </div>
+            <div>
+                <label for="eta">Fscia d'età</label>
+                <select id="eta" name="eta">
+                    <option value="Over 65">Over 65</option>
+                    <option value="" selected>Maggiorenne</option>
+                    <option value="Minorenne">Minorenne</option>
 
-                    </select>
+                </select>
 
-                </div>
-                 <!-- bottoni x creazione biglietto o rimozione dati inseriti  -->
-                <button id="creaBiglietto"  type="button" name="creaBiglietto">Crea biglietto</button>
-               <button id="annullaBiglietto"  type="button" name="annullaBiglietto">Annulla inserimento</button>
-             </div>
-      </div>
-      <div>
-          <table id="biglietto">
-            <thead>
-              <tr>
-                <th>Nome passeggero</th>
-                <th>Offerta</th>
-                <th>Carrozza</th>
-                <th>Codice CP</th>
-                <th>Costo biglietto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="passeggero"></th>
-                <th id="Offerta"></th>
-                <th id="carrozza"></th>
-                <th id="codicecp"></th>
-                <th id="costobiglietto"></th>
-              </tr>
-            </tbody>
-
+            </div>
+             <!-- bottoni x creazione biglietto o rimozione dati inseriti  -->
+            <button id="creaBiglietto"  type="button" name="creaBiglietto">Crea biglietto</button>
+           <button id="annullaBiglietto"  type="button" name="annullaBiglietto">Annulla inserimento</button>
+         </div>
+    </div>
+    <div>
+      <table id="biglietto">
+        <thead>
+          <tr>
+            <th>Nome passeggero</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice CP</th>
+            <th>Costo biglietto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="passeggero"></th>
+            <th id="Offerta"></th>
+            <th id="carrozza"></th>
+            <th id="codicecp"></th>
+            <th id="costobiglietto"></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
