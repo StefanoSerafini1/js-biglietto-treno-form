@@ -10,10 +10,10 @@ crea.addEventListener("click", function () {
   var nome = document.getElementById('nome').value;
   var km = document.getElementById('km').value;
   var fasciaeta = document.getElementById('eta').value;
-  var minCarrozza = 1;
-  var maxCarrozza = 10;
-  var minnumtreno = 90000;
-  var maxnumtreno =100000;
+  var mincarrozza = 1;
+  var maxcarrozza = 10;
+  var minnumcp = 90000;
+  var maxnumcp =100000;
 
   //controllo fascia d'età tramite ciclo if
   //con calcolo costo boglietto e applicazione sconto se necessario
@@ -25,5 +25,9 @@ crea.addEventListener("click", function () {
     }else {
         var costob = (km * prezzoalkm).toFixed(2) + " euro" + "  tariffa base prezzo intero";
     }
+    //calcolo num cp e carrozza random usando funz math random e usando valori minimi  massimali
+    var codicecp = Math.floor(Math.random()*(maxnumcp - minnumcp + 1)) + minnumcp;
+    var carrozza = Math.floor(Math.random()*(maxcarrozza - mincarrozza + 1)) + mincarrozza;
+
 
 }
