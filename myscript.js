@@ -33,5 +33,10 @@ crea.addEventListener("click", function () {
     var codicecp = Math.floor(Math.random()*(maxnumcp - minnumcp + 1)) + minnumcp;
     var carrozza = Math.floor(Math.random()*(maxcarrozza - mincarrozza + 1)) + mincarrozza;
 
-  
+    document.getElementById('passeggero').innerHTML = nome;
+    document.getElementById('offerta').innerHTML = offerta;
+    document.getElementById('carrozza').innerHTML = carrozza;
+    document.getElementById('codicecp').innerHTML = codicecp;
+    document.getElementById('costob').innerHTML = costob;
+
 }
