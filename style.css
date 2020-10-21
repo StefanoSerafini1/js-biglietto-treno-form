@@ -8,8 +8,18 @@
 body {
 font-family: sans-serif;
 }
+/* rendere visibile valori tab biglietto al click crea */
 
 .show {
   opacity: 1;
   transition: 0.5s
+}
+/* rendere invisibile valori tab biglietto al click annulla */
+.vuota{
+  opacity: 0;
+  transition: 0.5s;
+}
+//distanze valori tab
+th{
+    padding: 10px 20px;
 }

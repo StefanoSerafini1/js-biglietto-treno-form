@@ -1,7 +1,7 @@
 //variabile che ottengono input da bottoni crea e annulla
 
-var creab = document.getElementById('creaBiglietto');
-var annulla = document.getElementById('annullaBiglietto');
+var creab = document.getElementById('creab');
+var annulla = document.getElementById('annullab');
 
 //funzione che si attiva al click del bottone crea
 creab.addEventListener("click", function () {
@@ -20,10 +20,10 @@ creab.addEventListener("click", function () {
 
   if (fasciaeta == "Minorenne") {
         var offerta='Sconto minorenne';
-        var costob = (km * prezzoalkm - 20/100 * (km * prezzoalKm)).toFixed(2) + " €";
+        var costob = (km * prezzoalkm - 20/100 * (km * prezzoalkm)).toFixed(2) + " €";
     }else if (fasciaeta == "Over 65") {
         var offerta='sconto over 65';
-        var costob = (km * prezzoalkm - 40/100 * (km * prezzoalKm)).toFixed(2) + " €";
+        var costob = (km * prezzoalkm - 40/100 * (km * prezzoalkm)).toFixed(2) + " €";
     }else {
         var offerta='Prezzo intero';
         var costob = (km * prezzoalkm).toFixed(2) + " €";
@@ -43,3 +43,14 @@ creab.addEventListener("click", function () {
     document.getElementById('biglietto').className = "show";
 
 });
+
+//funzione annulla valori inseriti tramite button annulla
+annullab.addEventListener("click", function () {
+    document.getElementById('biglietto').className = "vuota";
+    document.getElementById('nome').value = "";
+    document.getElementById('km').value = "";
+    document.getElementById('carrozza').innerHTML = "";
+    document.getElementById('codicecp').innerHTML = "";
+    document.getElementById('costob').innerHTML = "";
+
+})
